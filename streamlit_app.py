@@ -47,5 +47,8 @@ streamlit.text(my_data_row)
 add_my_fruit = streamlit.text_input('What fruit would you like to add?', 'Kiwi')
 streamlit.write('Thanks for adding', add_my_fruit)
 
+#This will not work correctly, but just go with it for now
+my_cur_execute("insert into fruit_load_list_values ('from streamlit'))")
+
 import requests 
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + add_my_fruit)
